@@ -6,4 +6,10 @@
 # mylist = [’41’,’DROND’,’Sunbeam’, ’13’,’ZARA’]
 #
 
+mylist = ['41', "DROND", "Sunbeam", '13', "ZARA"]
 
+for i in mylist:
+    if i.isdigit():
+        print(i*3)
+    else:
+        print(i+"#")
