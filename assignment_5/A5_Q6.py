@@ -5,17 +5,21 @@
 # occurrence of "o" in between. For example, translate("this is fun") should return
 # the string "tothohisos isos fofunon".
 
-def translate(str):
+def translate():
 
-    str = input("Enter the string: ")
-    l1 = list(str)
-    list = []
+    string = input("Enter the string: ")
+    l1 = list(string)
+    list1 = []
     str2 = []
 
     for i in l1:
         if i == ['a', 'e', 'i', 'u', 'o']:
-            i.append(list)
+            i.append(list1)
         else:
             str2.append(i)
             str2.append("o")
             str2.append(i)
+
+    print(''.join(str2))
+
+translate()
