@@ -7,19 +7,17 @@
 
 def translate():
 
-    string = input("Enter the string: ")
-    l1 = list(string)
-    list1 = []
-    str2 = []
+    input_ = input("Enter the string: ")
+    list_ = list(input_)
+    str = []
 
-    for i in l1:
-        if i == ['a', 'e', 'i', 'u', 'o']:
-            i.append(list1)
+    for i in range(len(list_)):
+        if list_[i] == ' ' or list_[i] in ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]:
+            str.append(list_[i])
+
         else:
-            str2.append(i)
-            str2.append("o")
-            str2.append(i)
+            str.append(list_[i] + 'o' + list_[i])
+    print(''.join(str))
 
-    print(''.join(str2))
 
 translate()
